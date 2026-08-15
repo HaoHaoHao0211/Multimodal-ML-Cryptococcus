@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+title: "Multimodal Machine Learning for Antifungal Susceptibility Prediction in Cryptococcus neoformans"
+message: "If you use this software, please cite it as below."
+type: software
+authors:
+  - family-names: "Ma"
+    given-names: "Haoran"
+repository-code: "https://github.com/[your-username]/multimodal-antifungal-ml"
+abstract: "Reproducible code for multimodal machine-learning analysis combining four omics data types (genomic variants, RNA expression, mass spectrometry proteomics, and Raman spectroscopy) for binary phenotype prediction in Cryptococcus neoformans clinical isolates."
+license: MIT
+version: "1.0.0"
+date-released: "2026-08-15"
+keywords:
+  - machine learning
+  - multimodal
+  - antifungal resistance
+  - Cryptococcus neoformans
+  - nested cross-validation
+  - SHAP
