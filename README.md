@@ -11,13 +11,7 @@ clinical isolates.
 ## Overview
 
 This repository contains the analysis code for our study on predicting antifungal
-susceptibility in *Cryptococcus neoformans* using multimodal data integration. The
-pipeline implements:
-
-- **Nested cross-validation** (5 repeats x 5 folds) for robust performance estimation
-- **Bayesian hyperparameter optimization** using scikit-optimize
-- **SHAP analysis** for model interpretability
-- **Single-gene baseline comparison** to validate multimodal approach
+susceptibility in *Cryptococcus neoformans* using multimodal data integration.
 
 ## Project Structure
 
@@ -122,15 +116,6 @@ python single_gene.py
 - `single_gene_model_comparison.png/pdf` — boxplot comparison
 - `single_gene_3model_aucs.csv` — per-fold AUC values
 
-## Methodology
-
-### Nested Cross-Validation
-
-- **Outer loop**: 5 repeats x 5 folds = 25 evaluation folds (RepeatedStratifiedKFold)
-- **Inner loop**: 5-fold stratified CV for hyperparameter optimization
-- **Optimizer**: BayesSearchCV (scikit-optimize), 25 iterations per inner loop
-- **Metrics**: Accuracy, Precision, Recall, F1, ROC-AUC, PR-AUC
-
 ### Hyperparameter Search Spaces
 
 | Model      | Hyperparameters                                                |
@@ -155,11 +140,6 @@ Post-hoc model interpretability using TreeSHAP on the final full-data model:
 | MS | `87_MS.csv` | Proteomics | Mass spectrometry protein abundance |
 | LAM | `87_RS.csv` | Raman | Raman spectroscopy intensity |
 
-## Reproducibility
-
-- All random seeds are fixed at 42 (`RANDOM_STATE`).
-- XGBoost uses CPU mode (`device="cpu"`).
-- Environment specifications in `environment.yml` and `requirements.txt`.
 
 ## Citation
 
@@ -167,11 +147,11 @@ If you use this code in your research, please cite:
 
 ```bibtex
 @software{ma2026multimodal,
-  author = {},
-  title = {},
+  author = {Haoran Ma},
+  title = {Multimodal-ML-Cryptococcus},
   year = {2026},
   publisher = {GitHub},
-  url = {https://github.com/[your-username]/multimodal-antifungal-ml}
+  url = {https://github.com/HaoHaoHao0211/multimodal-antifungal-ml}
 }
 ```
 
