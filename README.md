@@ -148,7 +148,7 @@ If you use this code in your research, please cite:
 ```bibtex
 @software{ma2026multimodal,
   author = {Haoran Ma},
-  title = {Multimodal-ML-Cryptococcus},
+  title = {Multimodal Machine Learning for Antifungal Susceptibility Prediction in Cryptococcus neoformans},
   year = {2026},
   publisher = {GitHub},
   url = {https://github.com/HaoHaoHao0211/multimodal-antifungal-ml}
