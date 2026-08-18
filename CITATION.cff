@@ -5,7 +5,7 @@ type: software
 authors:
   - family-names: "Ma"
     given-names: "Haoran"
-repository-code: "https://github.com/[your-username]/multimodal-antifungal-ml"
+repository-code: "https://github.com/HaoHaoHao0211/multimodal-antifungal-ml"
 abstract: "Reproducible code for multimodal machine-learning analysis combining four omics data types (genomic variants, RNA expression, mass spectrometry proteomics, and Raman spectroscopy) for binary phenotype prediction in Cryptococcus neoformans clinical isolates."
 license: MIT
 version: "1.0.0"
@@ -15,5 +15,4 @@ keywords:
   - multimodal
   - antifungal resistance
   - Cryptococcus neoformans
-  - nested cross-validation
   - SHAP
