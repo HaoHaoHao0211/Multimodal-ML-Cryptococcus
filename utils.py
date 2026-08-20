@@ -117,8 +117,8 @@ def load_multimodal_data():
     """
     # --- Phenotype (reference ID order) ---
     pheno = pd.read_csv(PHENO_PATH)
-    pheno_ids = pd.Index(pheno.iloc[:, 1].astype(str).values, name="CDCF_No")
-    y = pheno.iloc[:, 6].astype(int).values
+    pheno_ids = pd.Index(pheno.iloc[:, 0].astype(str).values, name="Strain ID")
+    y = pheno.iloc[:, 1].astype(int).values
     assert set(y) <= {0, 1}, f"Phenotype is not binary 0/1: {set(y)}"
     print(f"[Phenotype] {len(y)} samples, {sum(y == 0)} control / {sum(y == 1)} case")
 
